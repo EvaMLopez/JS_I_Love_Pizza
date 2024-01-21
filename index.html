@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Pizza</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>I Love Pizza</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+
+            <h2>Ver pizzas disponibles</h2>    
+
+            <select id="pizzaSelect">
+                <option value="" disabled selected></option>
+                <option value="margarita">Margarita</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="vegetariana">Vegetariana</option>
+            </select>  
+
+            <div id="ingredientsContainer"></div>
+
+            <form id="orderForm">
+                <label for="quantity">Cantidad</label>
+                <input type="number" name="quantity" id="quantity" min="1" placeholder="0">
+                <button type="button" id="addToOrderBtn">Añadir</button>
+                <p id="errorMessage"></p>
+            </form>
+
+            <div id="orderDetails">
+                <h2>Detalle del pedido:</h2>
+                <ul id="orderList"></ul>
+            </div>
+
+            <button type="button" id="placeOrderBtn">Hacer pedido</button>
+
+            <button id="newOrderBtn">Hacer otro pedido</button>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+    
+    <script src="./assets/app.js"></script>
+</body>
+</html>

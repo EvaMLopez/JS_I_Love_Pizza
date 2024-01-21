@@ -1,0 +1,61 @@
+body {
+    background-color: gray;    
+    background: url('./../img/background1.jpg') center center / cover no-repeat fixed;     
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+    background-color: rgb(100, 75, 46, 0.8)
+}
+
+footer {
+    background-color: rgb(100, 75, 46, 0.8);
+    text-align: center;
+    color: aliceblue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(100, 75, 46, 0.8); 
+    color: aliceblue;
+    padding: 10px; 
+    max-width: 600px; 
+    height: 600px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 50px;
+}
+
+li{
+    list-style:none;
+}
+
+input, select {
+    margin: 20px;
+}
+
+#errorMessage {
+    color:black;
+}
+
+#newOrderBtn {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {font-size: 40px;}
+    main {max-width: 500px; }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {font-size: 35px;}
+    main {max-width: 450px; }
+}
+@media screen and (max-width: 580px) {
+    h1 {font-size: 30px;}
+    main {max-width: 360px; }
+
+}
